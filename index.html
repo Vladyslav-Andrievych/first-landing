@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-section">
+        <!-- Header -->
+
+        <header class="header">
+          <div class="logo">
+            <img
+              class="logo__image"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+              alt="Logo"
+            />
+            <div class="logo__text">
+              <span class="logo__title">Foundation</span>
+              <span class="logo__description hidden_mobile"
+                >Startup landing template</span
+              >
+            </div>
+          </div>
+          <button class="hamburger hidden_desktop">
+            <i class="hamburger__icon"></i>
+          </button>
+          <nav class="navigation hidden_mobile">
+            <a href="#" class="navigation__item navigation__item_selected"
+              >Home</a
+            >
+            <a href="#" class="navigation__item">Stories</a>
+            <a href="#" class="navigation__item"
+              >Library<i class="navigation__arrow"></i
+            ></a>
+          </nav>
+          <button class="action-button header-action-button hidden_mobile">
+            Get Started
+          </button>
+        </header>
+
+        <!-- Headline -->
+
+        <section class="headline">
+          <h1 class="headline__title">Build stunning websites & apps.</h1>
+          <p class="headline__text">
+            Create live segments and target the right people for messages based
+            on their behaviors.
+          </p>
+          <div class="headline__actions">
+            <button class="action-button">Get Started</button>
+            <button class="action-button learn-more-button">Learn More</button>
+          </div>
+          <img
+            class="headline__bunner"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+            alt="Headline Bunner"
+          />
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

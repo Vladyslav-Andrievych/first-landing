@@ -1,0 +1,35 @@
+.headline {
+  color: #2b292d;
+
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+    margin: 35px 15px 0;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 24px 15px 0;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 15px 0;
+  }
+
+  &__bunner {
+    max-width: 100%;
+    margin-top: 33px;
+    margin-bottom: 36px;
+  }
+}
+
+.action-button.learn-more-button {
+  background-color: #fff;
+  color: #3040c4;
+  margin-top: 15px;
+}
