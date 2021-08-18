@@ -1,0 +1,56 @@
+.tips {
+  margin-bottom: 10px;
+}
+
+.tip {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 40px 15px 40px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #009b4d;
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    color: #2b292d;
+    margin: 0;
+    margin-top: 17px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    color: #2b292d;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  &__figure {
+    margin: 0;
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__image-caption {
+    font-size: 14px;
+    line-height: 22px;
+    color: #2b292d99;
+    margin-top: 19px;
+    text-align: center;
+  }
+}
