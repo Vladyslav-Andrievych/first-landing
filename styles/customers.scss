@@ -22,6 +22,7 @@
     @include for-large-down {
       width: 107px;
       height: 94px;
+      flex-grow: 1;
     }
 
     @include for-large-up {
