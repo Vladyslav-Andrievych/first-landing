@@ -49,3 +49,9 @@
     }
   }
 }
+
+.customers-second-section {
+  @include for-large-up {
+    margin-top: 13px; // + 13px to 30px of "item"(desktop) = 43px margin of all section
+  }
+}
