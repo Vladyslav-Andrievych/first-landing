@@ -67,12 +67,6 @@
   }
 }
 
-.action-button {
-  @include for-large-up {
-    width: 160px;
-  }
-}
-
 .action-button.learn-more-button {
   background-color: #fff;
   color: #3040c4;

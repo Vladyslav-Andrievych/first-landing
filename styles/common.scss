@@ -1,12 +1,12 @@
 @include for-large-up {
   .hidden_desktop {
-    display: none;
+    display: none !important;
   }
 }
 
 @include for-large-down {
   .hidden_mobile {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -21,6 +21,10 @@
   font-size: 18px;
   line-height: 13px;
   cursor: pointer;
+
+  @include for-large-up {
+    width: 160px;
+  }
 }
 
 .fixed-width-action-button {
