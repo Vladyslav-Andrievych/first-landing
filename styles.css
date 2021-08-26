@@ -9,8 +9,6 @@
   }
 }
 .action-button {
-  background-color: #3040c4;
-  color: #fff;
   width: 100%;
   height: 48px;
   border-radius: 2px;
@@ -18,6 +16,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 13px;
+  background-color: #3040c4;
+  color: #fff;
   cursor: pointer;
 }
 @media screen and (min-width: 1400px) {
@@ -44,20 +44,20 @@
 }
 
 .header {
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   height: 64px;
+  background-color: #fff;
   padding-left: 15px;
 }
 @media screen and (min-width: 1400px) {
   .header {
-    background-color: #f3c6bd;
     max-width: 1140px;
     height: 62px;
+    justify-content: initial;
+    background-color: #f3c6bd;
     margin: auto;
     padding-left: 0;
-    justify-content: initial;
   }
 }
 
@@ -80,10 +80,10 @@
 }
 @media screen and (min-width: 1400px) {
   .logo__text {
-    width: 222px;
-    height: 51px;
     display: flex;
     flex-direction: column;
+    width: 222px;
+    height: 51px;
     margin-left: 15px;
   }
 }
@@ -135,9 +135,9 @@
   font-weight: 700;
 }
 .navigation__arrow {
+  display: inline-block;
   width: 8px;
   height: 5px;
-  display: inline-block;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png");
   margin-left: 11px;
 }
@@ -170,11 +170,11 @@
 }
 @media screen and (min-width: 1400px) {
   .headline__title {
+    width: 754px;
+    height: 165px;
     font-size: 80px;
     line-height: 78px;
     letter-spacing: -0.5px;
-    width: 754px;
-    height: 165px;
     margin: 76px 0 0;
   }
 }
@@ -249,10 +249,10 @@
 }
 @media screen and (min-width: 1400px) {
   .article {
-    margin-bottom: 0;
-    margin-right: 29px;
     max-width: 555px;
     height: 102px;
+    margin-bottom: 0;
+    margin-right: 29px;
   }
 }
 .article:last-child {
@@ -320,8 +320,8 @@
   border-right: none;
 }
 .customers__logo {
-  filter: brightness(0);
   max-width: 80%;
+  filter: brightness(0);
 }
 @media screen and (min-width: 1400px) {
   .customers__logo {
@@ -371,9 +371,9 @@
   margin-top: 15px;
 }
 .tip__figure {
+  display: inline-block;
   margin: 0;
   margin-top: 30px;
-  display: inline-block;
 }
 .tip__image {
   max-width: 100%;
@@ -381,16 +381,16 @@
 .tip__image-caption {
   font-size: 14px;
   line-height: 22px;
+  text-align: center;
   color: #2b292d99;
   margin-top: 19px;
-  text-align: center;
 }
 
-.features__content {
-  margin-top: 106px;
-  margin-bottom: 110px;
+.features {
   display: flex;
   align-items: flex-start;
+  margin-top: 106px;
+  margin-bottom: 110px;
 }
 .features__left-decoration {
   max-width: 100%;
@@ -424,6 +424,9 @@
   margin: 0;
   margin-top: 30px;
 }
+.features__tips-list.tips-list {
+  margin-top: 22px;
+}
 .features__banner {
   max-width: 100%;
   position: relative;
@@ -431,17 +434,15 @@
 }
 
 .tips-list {
+  list-style-type: none;
   margin: 0;
-  margin-top: 22px;
   padding: 0;
   color: #2b292d;
-  list-style-type: none;
 }
 .tips-list__item {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  color: #2b292d;
   border-bottom: 1px solid #2b292d26;
   padding-bottom: 22px;
   padding-top: 20px;
@@ -464,14 +465,14 @@
 }
 
 .inbox {
-  background: #fcf0e366;
+  background-color: #fcf0e366;
   padding: 50px 15px 48px;
 }
 @media screen and (min-width: 1400px) {
   .inbox {
     display: flex;
-    padding: 115px 99px 101px 193px;
     justify-content: space-between;
+    padding: 115px 99px 101px 193px;
   }
 }
 .inbox__figure {
@@ -536,9 +537,9 @@
 }
 @media screen and (min-width: 1400px) {
   .inbox__description {
+    max-width: 461px;
     margin-top: 30px;
     margin-left: 28px;
-    max-width: 461px;
   }
 }
 .inbox__review {
@@ -552,8 +553,8 @@
 
 .review {
   background-color: #fff;
-  padding: 30px 20px 28px;
   border-bottom: 4px solid #0185d0;
+  padding: 30px 20px 28px;
 }
 .review__text {
   font-size: 20px;
@@ -680,9 +681,9 @@
   width: 150px;
   height: 1px;
   background-color: #0000001a;
+  border: none;
   margin: 0;
   margin-top: 40px;
-  border: none;
 }
 @media screen and (min-width: 1400px) {
   .communication__horizontal-line {
@@ -700,9 +701,9 @@
 }
 @media screen and (min-width: 1400px) {
   .offer-container {
+    max-width: 361px;
     margin-top: 41px;
     margin-left: 30px;
-    max-width: 361px;
   }
   .offer-container:first-child {
     margin-left: 0;
@@ -720,15 +721,15 @@
   font-weight: 700;
 }
 .offer__link {
-  font-weight: 700;
   display: inline-block;
+  font-weight: 700;
   margin-top: 8px;
 }
 
 .audience {
   background-color: #00a1c612;
-  padding: 50px 15px;
   color: #2b292d;
+  padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
   .audience {
@@ -813,9 +814,9 @@
 }
 @media screen and (min-width: 1400px) {
   .audience__categories-item {
+    flex-grow: 1;
     margin-left: 30px;
     margin-top: 0;
-    flex-grow: 1;
   }
 }
 .audience__categories-item:first-child {
@@ -839,9 +840,9 @@
 }
 .audience-category__image {
   display: block;
+  max-width: 100%;
   margin: auto;
   padding-top: 22px;
-  max-width: 100%;
 }
 .audience-category__name {
   font-weight: 700;
@@ -859,14 +860,14 @@
 }
 
 .feedback {
-  padding: 39px 15px 50px;
   border-bottom: 1px solid #e3e3e3;
+  padding: 39px 15px 50px;
 }
 @media screen and (min-width: 1400px) {
   .feedback {
-    padding: 76px 0 66px;
-    border-bottom: 1px solid #0000001a;
     position: relative;
+    border-bottom: 1px solid #0000001a;
+    padding: 76px 0 66px;
   }
 }
 .feedback__title {
@@ -879,8 +880,8 @@
 @media screen and (min-width: 1400px) {
   .feedback__title {
     max-width: 1140px;
-    margin: auto;
     text-align: center;
+    margin: auto;
   }
 }
 .feedback__description {
@@ -893,9 +894,9 @@
 @media screen and (min-width: 1400px) {
   .feedback__description {
     max-width: 750px;
+    text-align: center;
     margin: auto;
     margin-top: 28px;
-    text-align: center;
   }
 }
 .feedback__user {
@@ -909,9 +910,9 @@
 @media screen and (min-width: 1400px) {
   .feedback__user {
     width: 225px;
+    align-items: center;
     margin: auto;
     margin-top: 34px;
-    align-items: center;
   }
 }
 .feedback__user-name {
@@ -936,17 +937,17 @@
 @media screen and (min-width: 1400px) {
   .feedback__image {
     width: 273px;
-    margin-top: 0px;
     position: absolute;
     bottom: 0;
     right: 26px;
+    margin-top: 0px;
   }
 }
 
 .dots-nav {
-  max-width: 75px;
   display: flex;
   justify-content: space-between;
+  max-width: 75px;
 }
 @media screen and (min-width: 1400px) {
   .dots-nav {
@@ -967,12 +968,12 @@
   }
 }
 .dots-nav__item_selected {
-  background-color: #3142c5;
+  background-color: #3142c6;
 }
 
 .hiring {
-  padding: 50px 15px;
   color: #2b292d;
+  padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
   .hiring {
@@ -990,10 +991,10 @@
 @media screen and (min-width: 1400px) {
   .hiring__title {
     max-width: 555px;
-    margin: auto;
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.5px;
+    margin: auto;
   }
 }
 .hiring__description {
@@ -1048,9 +1049,9 @@
   justify-content: space-between;
   align-items: center;
   height: 140px;
-  cursor: pointer;
-  border: 1px solid #2b292d33;
+  border: 1px solid #2b292d26;
   border-radius: 8px;
+  cursor: pointer;
 }
 @media screen and (min-width: 1400px) {
   .vacancy {
@@ -1080,10 +1081,10 @@
 }
 @media screen and (min-width: 1400px) {
   .vacancy__text {
-    margin: 26px 0px 26px 25px;
     width: 660px;
     height: 29px;
     flex-direction: row;
+    margin: 26px 0px 26px 25px;
   }
 }
 .vacancy__name {
@@ -1105,10 +1106,10 @@
 }
 @media screen and (min-width: 1400px) {
   .vacancy__description {
-    font-size: 18px;
-    line-height: 24px;
     display: inline-block;
     width: 232px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 .vacancy__link {
@@ -1128,8 +1129,8 @@
   display: inline-block;
   width: 7px;
   height: 12px;
-  margin: auto;
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+  margin: auto;
 }
 @media screen and (min-width: 1400px) {
   .vacancy__link-arrow {
@@ -1138,22 +1139,22 @@
 }
 
 .order {
-  padding: 50px 15px;
   background-color: #f4f5f7;
   color: #2b292d;
+  padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
   .order {
-    padding: 73px 230px 72px 224px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 73px 230px 72px 224px;
   }
 }
 .order__image {
   display: block;
-  margin: auto;
   max-width: 200px;
+  margin: auto;
 }
 @media screen and (min-width: 1400px) {
   .order__image {
@@ -1177,8 +1178,8 @@
 }
 @media screen and (min-width: 1400px) {
   .order__title {
-    margin: 0;
     text-align: start;
+    margin: 0;
   }
 }
 .order__description {
@@ -1194,20 +1195,20 @@
 }
 @media screen and (min-width: 1400px) {
   .order__actions {
-    margin-top: 26px;
     display: flex;
+    margin-top: 26px;
   }
 }
 .order__email {
-  margin-top: 72px;
-  border: 1px solid #261e2e33;
-  border-radius: 2px;
-  background-color: #fff;
   height: 48px;
   width: 100%;
   text-align: center;
   font-size: 18px;
   line-height: 13px;
+  border: 1px solid #261e2e33;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-top: 72px;
 }
 @media screen and (min-width: 1400px) {
   .order__email {
@@ -1222,9 +1223,9 @@
 }
 @media screen and (min-width: 1400px) {
   .order__action-button {
+    flex-shrink: 0;
     margin-top: 0;
     margin-left: 10px;
-    flex-shrink: 0;
   }
 }
 .order__terms {
@@ -1289,9 +1290,9 @@
   width: 100%;
   height: 1px;
   background-color: #e3e3e3;
+  border: none;
   margin: 0;
   margin-top: 40px;
-  border: none;
 }
 .footer__additional-navigation {
   max-width: 290px;
@@ -1333,10 +1334,10 @@
   .footer__links {
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #2b292d1a;
+    padding: 13px 132px 15px 130px;
     margin: 0;
     margin-top: 59px;
-    padding: 13px 132px 15px 130px;
-    border-top: 1px solid #2b292d1a;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -1349,8 +1350,8 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__social-media {
-    margin: 0;
     flex-grow: 1;
+    margin: 0;
   }
 }
 
@@ -1377,9 +1378,9 @@
 }
 @media screen and (min-width: 1400px) {
   .logo-footer__text {
+    text-align: start;
     margin-top: 0px;
     margin-left: 10px;
-    text-align: start;
   }
 }
 .logo-footer__title {
@@ -1405,10 +1406,11 @@
   margin-top: 18px;
 }
 .additional-navigation__link {
+  text-decoration: none;
   font-size: 18px;
   line-height: 30px;
-  color: #2b292d99;
-  text-decoration: none;
+  color: #2b292d;
+  opacity: 0.6;
 }
 
 .terms-and-conditions {
@@ -1417,10 +1419,11 @@
   max-width: 180px;
 }
 .terms-and-conditions__link {
-  color: #2b292d99;
+  text-decoration: none;
   font-size: 14px;
   line-height: 22px;
-  text-decoration: none;
+  color: #2b292d;
+  opacity: 0.6;
 }
 
 .social-media {

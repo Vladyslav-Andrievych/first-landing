@@ -1,5 +1,5 @@
 .top-section {
-  background-color: #f3c6bd;
+  background-color: $background-color-light-pink;
 
   @include for-large-up {
     padding-top: 39px;
@@ -7,19 +7,19 @@
 }
 
 .header {
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   height: 64px;
+  background-color: $color-pure-white;
   padding-left: 15px;
 
   @include for-large-up {
-    background-color: #f3c6bd;
     max-width: 1140px;
     height: 62px;
+    justify-content: initial;
+    background-color: $background-color-light-pink;
     margin: auto;
     padding-left: 0;
-    justify-content: initial;
   }
 }
 
@@ -37,13 +37,13 @@
   }
 
   &__text {
-    color: #2b292d;
+    color: $text-color-grey;
 
     @include for-large-up {
-      width: 222px;
-      height: 51px;
       display: flex;
       flex-direction: column;
+      width: 222px;
+      height: 51px;
       margin-left: 15px;
     }
   }
@@ -53,6 +53,7 @@
     font-size: 20px;
     line-height: 25px;
     margin-left: 13px;
+
     @include for-large-up {
       margin: 0;
     }
@@ -69,7 +70,7 @@
   width: 58px;
   background-color: transparent;
   border: none;
-  border-left: 1px solid #00000026;
+  border-left: 1px solid $border-color-black-with-another-opacity;
 
   &__icon {
     display: inline-block;
@@ -87,7 +88,7 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
-    color: #2b292d;
+    color: $text-color-grey;
     margin-left: 50px;
 
     &:first-child {
@@ -100,9 +101,9 @@
   }
 
   &__arrow {
+    display: inline-block;
     width: 8px;
     height: 5px;
-    display: inline-block;
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
     margin-left: 11px;
   }

@@ -1,5 +1,5 @@
 .headline {
-  color: #2b292d;
+  color: $text-color-grey;
 
   @include for-large-up {
     max-width: 1140px;
@@ -21,11 +21,11 @@
     margin: 35px 15px 0;
 
     @include for-large-up {
+      width: 754px;
+      height: 165px;
       font-size: 80px;
       line-height: 78px;
       letter-spacing: -0.5px;
-      width: 754px;
-      height: 165px;
       margin: 76px 0 0;
     }
   }
@@ -68,8 +68,8 @@
 }
 
 .action-button.learn-more-button {
-  background-color: #fff;
-  color: #3040c4;
+  background-color: $color-pure-white;
+  color: $text-color-blue;
   margin-top: 15px;
   cursor: pointer;
 

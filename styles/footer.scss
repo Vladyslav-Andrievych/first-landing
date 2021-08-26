@@ -27,7 +27,7 @@
     @include for-large-up {
       font-size: 18px;
       line-height: 26px;
-      color: #2b292d99;
+      color: $text-color-grey-with-opacity;
       margin: 0;
       margin-top: 26px;
     }
@@ -57,10 +57,10 @@
   &__horizontal-line {
     width: 100%;
     height: 1px;
-    background-color: #e3e3e3;
+    background-color: $border-color-white;
+    border: none;
     margin: 0;
     margin-top: 40px;
-    border: none;
   }
 
   &__additional-navigation {
@@ -102,10 +102,10 @@
     @include for-large-up {
       display: flex;
       justify-content: space-between;
+      border-top: 1px solid $border-color-grey-with-another-opacity;
+      padding: 13px 132px 15px 130px;
       margin: 0;
       margin-top: 59px;
-      padding: 13px 132px 15px 130px;
-      border-top: 1px solid #2b292d1a;
     }
   }
 
@@ -119,8 +119,8 @@
     margin-top: 31px;
 
     @include for-large-up {
-      margin: 0;
       flex-grow: 1;
+      margin: 0;
     }
   }
 }
@@ -143,13 +143,13 @@
     flex-direction: column;
     line-height: 25px;
     text-align: center;
-    color: #2b292d;
+    color: $text-color-grey;
     margin-top: 20px;
 
     @include for-large-up {
+      text-align: start;
       margin-top: 0px;
       margin-left: 10px;
-      text-align: start;
     }
   }
 
@@ -169,7 +169,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
-    color: #2b292d;
+    color: $text-color-grey;
     margin: 0;
   }
 
@@ -181,10 +181,11 @@
   }
 
   &__link {
+    text-decoration: none;
     font-size: 18px;
     line-height: 30px;
-    color: #2b292d99;
-    text-decoration: none;
+    color: $text-color-grey;
+    opacity: 0.6;
   }
 }
 
@@ -194,10 +195,11 @@
   max-width: 180px;
 
   &__link {
-    color: #2b292d99;
+    text-decoration: none;
     font-size: 14px;
     line-height: 22px;
-    text-decoration: none;
+    color: $text-color-grey;
+    opacity: 0.6;
   }
 }
 

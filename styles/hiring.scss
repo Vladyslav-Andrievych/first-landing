@@ -1,6 +1,6 @@
 .hiring {
+  color: $text-color-grey;
   padding: 50px 15px;
-  color: #2b292d;
 
   @include for-large-up {
     padding: 106px 0px 110px 0px;
@@ -16,10 +16,10 @@
 
     @include for-large-up {
       max-width: 555px;
-      margin: auto;
       font-size: 56px;
       line-height: 56px;
       letter-spacing: -0.5px;
+      margin: auto;
     }
   }
 
@@ -76,26 +76,24 @@
   justify-content: space-between;
   align-items: center;
   height: 140px;
+  border: 1px solid $border-color-grey-with-opacity;
+  border-radius: $border-radius;
   cursor: pointer;
-  border: 1px solid #2b292d33;
-  border-radius: 8px;
 
   @include for-large-up {
     height: 81px;
-    // box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
-    //   0px 11px 55px rgba(0, 0, 0, 0.07);
   }
 
   &:hover {
-    background-color: #3141c5;
+    background-color: $background-color-blue;
 
     .vacancy__name,
     .vacancy__description {
-      color: #fff;
+      color: $color-pure-white;
     }
 
     .vacancy__link {
-      background-color: #3141c5;
+      background-color: $background-color-blue;
     }
 
     .vacancy__link-arrow {
@@ -112,10 +110,10 @@
     margin: 19px 0px 19px 20px;
 
     @include for-large-up {
-      margin: 26px 0px 26px 25px;
       width: 660px;
       height: 29px;
       flex-direction: row;
+      margin: 26px 0px 26px 25px;
     }
   }
 
@@ -123,7 +121,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
-    color: #2b292d;
+    color: $text-color-grey;
 
     @include for-large-up {
       display: inline-block;
@@ -134,13 +132,13 @@
   &__description {
     font-size: 16px;
     line-height: 22px;
-    color: #2b292d99;
+    color: $text-color-grey-with-opacity;
 
     @include for-large-up {
-      font-size: 18px;
-      line-height: 24px;
       display: inline-block;
       width: 232px;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 
@@ -148,12 +146,12 @@
     display: flex;
     width: 50px;
     height: 100%;
-    background-color: #d5d4d5;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    background-color: $background-color-another-white;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
 
     @include for-large-up {
-      background-color: #fff;
+      background-color: $color-pure-white;
     }
   }
 
@@ -161,8 +159,8 @@
     display: inline-block;
     width: 7px;
     height: 12px;
-    margin: auto;
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
+    margin: auto;
 
     @include for-large-up {
       margin-right: 24px;

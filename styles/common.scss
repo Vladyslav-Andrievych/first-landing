@@ -11,15 +11,15 @@
 }
 
 .action-button {
-  background-color: #3040c4;
-  color: #fff;
   width: 100%;
   height: 48px;
-  border-radius: 2px;
+  border-radius: $border-radius / 4;
   border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 13px;
+  background-color: $background-color-another-blue;
+  color: $color-pure-white;
   cursor: pointer;
 
   @include for-large-up {

@@ -1,7 +1,7 @@
 .customers {
   @include for-large-up {
     display: flex;
-    max-width: 1140px;
+    max-width: $max-width-content;
     margin: auto;
   }
 
@@ -17,8 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid $border-color-white;
+    border-right: 1px solid $border-color-white;
     @include for-large-down {
       width: 107px;
       height: 94px;
@@ -42,8 +42,9 @@
   }
 
   &__logo {
-    filter: brightness(0);
     max-width: 80%;
+    filter: brightness(0);
+
     @include for-large-up {
       max-width: 100%;
     }

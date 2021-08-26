@@ -1,11 +1,11 @@
 .inbox {
-  background: #fcf0e366;
+  background-color: $background-color-for-inbox;
   padding: 50px 15px 48px;
 
   @include for-large-up {
     display: flex;
-    padding: 115px 99px 101px 193px;
     justify-content: space-between;
+    padding: 115px 99px 101px 193px;
   }
 
   &__figure {
@@ -24,7 +24,7 @@
     font-size: 14px;
     line-height: 22px;
     text-align: center;
-    color: #2b292d99;
+    color: $text-color-grey-with-opacity;
     margin-top: 15px;
   }
 
@@ -36,7 +36,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
-    color: #f1592b;
+    color: $text-color-orange;
     margin: 0;
     margin-top: 32px;
 
@@ -51,7 +51,7 @@
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.357143px;
-    color: #2b292d;
+    color: $text-color-grey;
     margin: 0;
     margin-top: 17px;
 
@@ -67,14 +67,14 @@
   &__description {
     font-size: 24px;
     line-height: 34px;
-    color: #2b292d;
+    color: $text-color-grey;
     margin: 0;
     margin-top: 18px;
 
     @include for-large-up {
+      max-width: 461px;
       margin-top: 30px;
       margin-left: 28px;
-      max-width: 461px;
     }
   }
 
@@ -88,14 +88,14 @@
 }
 
 .review {
-  background-color: #fff;
+  background-color: $color-pure-white;
+  border-bottom: 4px solid $border-color-aqua;
   padding: 30px 20px 28px;
-  border-bottom: 4px solid #0185d0;
 
   &__text {
     font-size: 20px;
     line-height: 28px;
-    color: #2b292d;
+    color: $text-color-grey;
     margin: 0;
   }
 
@@ -108,7 +108,7 @@
   display: flex;
   font-size: 16px;
   line-height: 22px;
-  color: #2b292d;
+  color: $text-color-grey;
 
   &__photo {
     width: 40px;
@@ -127,6 +127,6 @@
   }
 
   &__work-position {
-    color: #807f81;
+    color: $text-color-light-grey;
   }
 }

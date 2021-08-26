@@ -1,5 +1,5 @@
 .about {
-  background-color: #f4f5f7;
+  background-color: $background-color-white;
 }
 
 .articles {
@@ -12,14 +12,14 @@
 }
 
 .article {
-  color: #2b292d;
+  color: $text-color-grey;
   margin-bottom: 20px;
 
   @include for-large-up {
-    margin-bottom: 0;
-    margin-right: 29px;
     max-width: 555px;
     height: 102px;
+    margin-bottom: 0;
+    margin-right: 29px;
   }
 
   &:last-child {
